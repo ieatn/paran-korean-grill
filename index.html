@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/chatbot/chatbot.css">
   <style>
-    :root{--red:#C9232E;--red-deep:#8B1018;--gold:#C9A154;--bg:#080808;--surface:#111;--surface-2:#181818;--text:#F0EAE0;--muted:#8A8078;--border:#242424;--font-head:'Noto Serif KR',Georgia,serif;--font-body:'Noto Sans KR',system-ui,sans-serif;--max:1160px;--ease:.3s cubic-bezier(.4,0,.2,1)}
+    :root{--red:#C9232E;--red-deep:#8B1018;--gold:#C9A154;--bg:#080808;--surface:#111;--surface-2:#181818;--text:#F0EAE0;--muted:#8A8078;--border:#242424;--font-head:'Noto Serif KR',Georgia,serif;--font-body:'Noto Sans KR',system-ui,sans-serif;--max:1160px;--ease:.3s cubic-bezier(.4,0,.2,1);--chatbot-radius:14px;--chatbot-shadow:0 22px 60px rgba(0,0,0,.5);--chatbot-surface:#111;--chatbot-surface-elevated:#181818;--chatbot-accent:#C9232E;--chatbot-accent-hover:#8B1018;--chatbot-on-accent:#fff;--chatbot-text:#F0EAE0;--chatbot-muted:#8A8078;--chatbot-border:#242424;--chatbot-bot-bg:#141414;--chatbot-user-bg:#C9232E;--chatbot-user-text:#fff;--chatbot-input-bg:#111;--chatbot-fab-size:56px}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
@@ -382,5 +383,7 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 </script>
+<script type="application/json" id="chatbot-site-config">{"siteId":"paran","labels":{"title":"PARAN Korean Grill","kicker":"Fremont · Seattle","opener":"안녕하세요 — ask about our Korean grill experience, menu zones, or visiting Fremont."}}</script>
+<script type="module" src="/chatbot/chatbot.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "name": "paran-korean-grill",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:127": "vite --host 127.0.0.1 --port 5174",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
